@@ -1,0 +1,141 @@
+.barsBtn{
+    display: none;
+}
+
+.bars{
+    left: 0;
+}
+
+@media screen and (min-width:576px){
+    .bars{
+        opacity: 0;
+    }
+
+    .box{
+        margin: 10px;
+    }
+
+    .why , .reason{
+        writing-mode: vertical-lr;
+    }
+
+    .why{
+        margin-left: 40px;
+    }
+
+    .instruction{
+        writing-mode: vertical-lr;
+        padding-top: 10px;
+        padding-left: 10px;
+        height: 120px;
+    }
+
+    .hamburger_bar{
+        transform: translate(100%,-50px);
+    }
+
+    .logo{
+        position: absolute;
+        left: 0;
+    }
+
+    .reason{
+        position: relative;
+        left: 45%;
+    }
+
+}
+
+@media screen and (min-width:1200px){
+    .instruction{
+        height: 250px;
+    }
+}
+
+.hamburger_bar{
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    top: 50px;
+    left: -100%;
+}
+
+#bars:checked + .hamburger_bar{
+    background-color: white;
+    transform: translateX(100%);
+}
+
+.matte{
+    background-image: url(https://picsum.photos/id/255/125/180);
+    margin-top: 10px;
+    position: relative;
+}
+
+.matte p{
+    writing-mode: vertical-lr;
+    z-index: 1;
+}
+
+.matte::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    opacity: .4;
+    position: absolute;
+}
+
+.matte:hover::before{
+    background-color: yellow;
+}
+
+.matte:hover p{
+    color:green;
+}
+
+.todayIMG{
+    height: 300px;
+    background-image: url(https://picsum.photos/id/244/600/300);
+    position: relative;
+    left: 13%;
+}
+
+.today{
+    position: absolute;
+    width: 30px;
+    left: 15px;
+}
+
+.today p{
+    writing-mode: vertical-lr;
+}
+
+.todayI{
+    position: absolute;
+    right: 15px;
+}
+
+.cake{
+    transform: translate(16%,0);
+}
+
+.shopping{
+    transform: translate(16%,0);
+}
+
+.subscription{
+    height: 100px;
+}
+
+.subscriptionH{
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.subscriptionP{
+    color: white;
+}
