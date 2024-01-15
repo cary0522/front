@@ -6,6 +6,10 @@
     left: 0;
 }
 
+.date{
+    display: none;
+}
+
 @media screen and (min-width:576px){
     .bars{
         opacity: 0;
