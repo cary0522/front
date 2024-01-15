@@ -37,11 +37,34 @@
     .logo{
         position: absolute;
         left: 0;
+        margin-left: 16px;
+    }
+
+    .shoppingCar{
+        margin-right: 16px;
     }
 
     .reason{
         position: relative;
         left: 45%;
+    }
+
+    .footer{
+        position: relative;
+    }
+
+    .date{
+        position: absolute;
+        display: block;
+        writing-mode: vertical-rl;
+        top: 0px;
+        right: 0px;
+    }
+
+    .year{
+        position: relative;
+        left: 86%;
+        top: 20px;
     }
 
 }
@@ -121,19 +144,6 @@
 
 .shopping{
     transform: translate(16%,0);
-}
-
-.subscription{
-    height: 100px;
-}
-
-.subscriptionH{
-    height: 22px;
-    width: 22px;
-    text-align: center;
-    color: white;
-    border: 1px solid white;
-    border-radius: 50%;
 }
 
 .subscriptionP{
